@@ -1,0 +1,27 @@
+/* font-family: 'Spartan', sans-serif; */
+
+:root {
+    /* Primary colors */
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    --darkGrayishMagenta: hsl(303, 24%, 96%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --mainFontFamily: 'Spartan', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--mainFontFamily);
+
+}
