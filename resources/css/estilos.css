@@ -4,7 +4,7 @@
     /* Primary colors */
     --veryDarkMagenta: hsl(300, 43%, 22%);
     --softPink: hsl(333, 80%, 67%);
-    --darkGrayishMagenta: hsl(303, 24%, 96%);
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
     --lightGrayishMagenta: hsl(300, 24%, 96%);
     --white: hsl(0, 0%, 100%);
     --mainFontFamily: 'Spartan', sans-serif;
@@ -23,5 +23,40 @@ html {
 
 body {
     font-family: var(--mainFontFamily);
+    padding: 5%;
+    height: 100vh;
+}
 
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header rating rating"
+    "comments comments comments comments"
+    ;
+}
+
+header {
+    grid-area: header;
+    padding: 5% 15%;
+    align-self: center;
+}
+
+header h1 {
+    color: var(--veryDarkMagenta);
+}
+
+header p {
+    color: var(--darkGrayishMagenta);
+}
+
+.rating-section {
+    grid-area: rating;
+}
+
+.comments-section {
+    grid-area: comments;
+    display: flex;
 }
